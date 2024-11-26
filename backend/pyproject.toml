@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "diet-plane"
+version = "0.1.0"
+description = ""
+authors = ["Qasim Nawaz <qnawaz857@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+uvicorn = "^0.32.1"
+fastapi = "^0.115.5"
+sqlalchemy = "^2.0.36"
+sqlmodel = "^0.0.22"
+bcrypt = "^4.2.1"
+psycopg = "^3.2.3"
+python-multipart = "^0.0.17"
+
+
+[tool.poetry.group.dev.dependencies]
+passlib = "^1.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
